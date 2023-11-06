@@ -6,20 +6,24 @@ import header from "./assets/header-image.png";
 
 function App() {
   const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     // console.log("je suis dans mon useEffect");
     const fetchData = async () => {
       if (data.length === 0) {
         const response = await axios.get("http://localhost:3000/");
-        console.log(response.data);
+        // console.log(response.data);
         setData(response.data);
+        setIsLoading(false);
       }
     };
     fetchData();
-  }, [data]);
+  }, []);
 
-  return (
+  return isLoading ? (
+    <p> Chargement ...</p>
+  ) : (
     <>
       <header>
         <div className="logo">{/* <img src={logo} alt="logo" /> */}</div>
@@ -44,6 +48,13 @@ function App() {
             return (
               <section key={elem.categories}>
                 <h2>{elem.categories}</h2>
+                {data.meals.map((elem) => {
+                  return (
+                    <div key={elem.meals}>
+                      <span>{elem.meals}</span>;
+                    </div>
+                  );
+                })}
               </section>
             );
           })}
