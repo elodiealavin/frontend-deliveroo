@@ -1,0 +1,29 @@
+header {
+  border: 1px solid orange;
+}
+
+.logo {
+  border: 1px green solid;
+  height: 10px;
+}
+
+.info-restaurant {
+  border: 2px brown solid;
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info-center {
+  background-color: antiquewhite;
+}
+
+.info-center h1 {
+  font-size: 30px;
+}
+
+.info-restaurant p {
+  border: blueviolet 3px solid;
+  font-size: 20px;
+}
