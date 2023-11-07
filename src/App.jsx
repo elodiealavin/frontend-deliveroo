@@ -30,7 +30,7 @@ function App() {
           <img src={logo} alt="" />
         </div>
 
-        <div className="container">
+        <div className="container-header">
           <div className="restaurant-info">
             <h1>Le Pain Quotidien - Montorgueil</h1>
             <p>
@@ -44,8 +44,8 @@ function App() {
         </div>
       </header>
 
-      {/* <main className="container">
-        <div className="container-menu">
+      <main className="">
+        <div className="menu">
           {data.categories.map((elem) => {
             // console.log(elem);
 
@@ -73,7 +73,7 @@ function App() {
             );
           })}
         </div>
-      </main> */}
+      </main>
     </>
   );
 }

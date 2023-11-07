@@ -9,7 +9,7 @@ header img {
 }
 
 .container {
-  border: 1px orange solid;
+  /* border: 1px orange solid; */
   display: flex;
   padding: 20px;
 }
@@ -18,7 +18,7 @@ header img {
   margin-bottom: 30px;
 }
 .restaurant-info p {
-  border: salmon 1px solid;
+  /* border: salmon 1px solid; */
   font-size: 20px;
   color: grey;
   line-height: 29px;
@@ -29,5 +29,5 @@ header img {
   width: 350px;
   height: 200px;
   border-radius: 5px;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
