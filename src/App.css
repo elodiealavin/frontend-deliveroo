@@ -1,29 +1,33 @@
 header {
   max-width: 1204px;
   margin: 0 auto;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
-.logo {
-  width: 160px;
+header img {
+  width: 200px;
 }
 
 .container {
   border: 1px orange solid;
   display: flex;
+  padding: 20px;
 }
 .restaurant-info h1 {
   font-size: 40px;
   margin-bottom: 30px;
 }
 .restaurant-info p {
-  /* border: salmon 1px solid; */
+  border: salmon 1px solid;
   font-size: 20px;
   color: grey;
   line-height: 29px;
+  margin-right: 20px;
 }
-img {
-  object-fit: contain;
+.container img {
+  object-fit: cover;
+  width: 350px;
   height: 200px;
   border-radius: 5px;
+  background-color: blueviolet;
 }

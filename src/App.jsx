@@ -2,7 +2,7 @@ import "./App.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import logo from "./assets/deliveroo-logo.png";
-import header from "./assets/header-image.png";
+import picture from "./assets/header-image.png";
 
 function App() {
   const [data, setData] = useState([]);
@@ -27,7 +27,7 @@ function App() {
     <>
       <header>
         <div className="logo">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="" />
         </div>
 
         <div className="container">
@@ -40,7 +40,7 @@ function App() {
               l’agriculture biologique.
             </p>
           </div>
-          <img src={header} alt="" />
+          <img src={picture} alt="" />
         </div>
       </header>
 
