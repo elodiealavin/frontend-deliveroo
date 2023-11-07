@@ -26,9 +26,12 @@ function App() {
   ) : (
     <>
       <header>
-        <div className="logo">{/* <img src={logo} alt="logo" /> */}</div>
-        <div className="info-restaurant">
-          <div className="info-center">
+        <div className="logo">
+          <img src={logo} alt="logo" />
+        </div>
+
+        <div className="container">
+          <div className="restaurant-info">
             <h1>Le Pain Quotidien - Montorgueil</h1>
             <p>
               Profitez de chaque plaisir de la vie quotidienne. Le Pain
@@ -36,30 +39,41 @@ function App() {
               des fruits et des légumes frais et de saison issus de
               l’agriculture biologique.
             </p>
-            <div>{/* <img src={header} alt="" /> */}</div>
           </div>
+          <img src={header} alt="" />
         </div>
       </header>
 
-      <main className="content">
-        <div className="content-menu">
+      {/* <main className="container">
+        <div className="container-menu">
           {data.categories.map((elem) => {
-            console.log(elem);
+            // console.log(elem);
+
             return (
-              <section key={elem.categories}>
-                <h2>{elem.categories}</h2>
-                {data.meals.map((elem) => {
+              <section className="category" key={elem.name}>
+                <h2>{elem.name}</h2>
+                {elem.meals.map((meal) => {
                   return (
-                    <div key={elem.meals}>
-                      <span>{elem.meals}</span>;
-                    </div>
+                    <>
+                      <article className="name" key={meal.title}>
+                        <h3>{meal.title}</h3>
+                      </article>
+
+                      <div className="description">
+                        <p>{meal.description}</p>
+                      </div>
+                      <div className="price-picture">
+                        <span>{meal.price} €</span>
+                        {meal.picture && <img src={meal.picture} alt="" />}
+                      </div>
+                    </>
                   );
                 })}
               </section>
             );
           })}
         </div>
-      </main>
+      </main> */}
     </>
   );
 }

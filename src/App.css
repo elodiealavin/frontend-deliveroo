@@ -1,29 +1,29 @@
 header {
-  border: 1px solid orange;
+  max-width: 1204px;
+  margin: 0 auto;
+  background-color: aquamarine;
 }
 
 .logo {
-  border: 1px green solid;
-  height: 10px;
+  width: 160px;
 }
 
-.info-restaurant {
-  border: 2px brown solid;
+.container {
+  border: 1px orange solid;
   display: flex;
-  flex-direction: row;
-  max-width: 1200px;
-  margin: 0 auto;
 }
-
-.info-center {
-  background-color: antiquewhite;
+.restaurant-info h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
 }
-
-.info-center h1 {
-  font-size: 30px;
-}
-
-.info-restaurant p {
-  border: blueviolet 3px solid;
+.restaurant-info p {
+  /* border: salmon 1px solid; */
   font-size: 20px;
+  color: grey;
+  line-height: 29px;
+}
+img {
+  object-fit: contain;
+  height: 200px;
+  border-radius: 5px;
 }
